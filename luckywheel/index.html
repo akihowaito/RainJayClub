@@ -794,6 +794,20 @@
     }
   }
 
+  /* Mobile: keep the wheel and redemption panel in normal vertical flow. */
+  @media (max-width:960px){
+    .hero{
+      grid-template-columns:minmax(0,1fr);
+      align-items:start;
+      gap:24px;
+    }
+    .wheelb{position:relative;top:auto}
+    .right-rail{width:100%;max-width:680px;margin:0 auto}
+  }
+  @media (max-width:640px){
+    .hero{gap:20px}
+  }
+
 </style>
 
 </head>
