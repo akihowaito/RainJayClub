@@ -1013,61 +1013,61 @@
      纯前端版本只能在当前浏览器记录“已使用”，无法阻止用户在另一台设备/清除缓存后再次使用。
      正式全局一次性核销仍需要后端。 */
   const REDEEM_CODES = [
-      'RJW-EEEYXF',
-      'RJW-3HFRVP',
-      'RJW-NTKYSZ',
-      'RJW-ZAZ7T8',
-      'RJW-6FW243',
-      'RJW-UGYFGQ',
-      'RJW-8FTAFX',
-      'RJW-RUDRYF',
-      'RJW-DKWZ52',
-      'RJW-KJN9N5',
-      'RJW-AAD53Q',
-      'RJW-QQ2SJ6',
-      'RJW-FTJSBR',
-      'RJW-VNW8H5',
-      'RJW-HMSTC8',
-      'RJW-SWFA2R',
-      'RJW-GU3972',
-      'RJW-2S26AW',
-      'RJW-AQRR45',
-      'RJW-QA4PUH',
-      'RJW-DWF8Y6',
-      'RJW-4XD66W',
-      'RJW-DNGT9F',
-      'RJW-3XRAJD',
-      'RJW-A953P6',
-      'RJW-2NY2BU',
-      'RJW-2N2F3Z',
-      'RJW-GJREQG',
-      'RJW-9NSWHD',
-      'RJW-AZPSHX',
-      'RJW-2V22KT',
-      'RJW-MFFU4B',
-      'RJW-XD7YVG',
-      'RJW-XUX8CN',
-      'RJW-KK6GVU',
-      'RJW-GHU9MF',
-      'RJW-PGZW5U',
-      'RJW-7EYZ84',
-      'RJW-VQ7Q7Y',
-      'RJW-K9QGY3',
-      'RJW-5ZKMT2',
-      'RJW-79WNNG',
-      'RJW-CSGWPF',
-      'RJW-RQEWEG',
-      'RJW-U7WSV3',
-      'RJW-SF85EA',
-      'RJW-5AQPCC',
-      'RJW-MJZ5MF',
-      'RJW-TCDPSB',
-      'RJW-ZYVQG2'
+      'RJW-F9EASG',
+      'RJW-EJBVBN',
+      'RJW-FWPZW9',
+      'RJW-GRFJHC',
+      'RJW-GFZ7UE',
+      'RJW-KMYRXG',
+      'RJW-GSPSXC',
+      'RJW-KFNTWJ',
+      'RJW-MP8Q8P',
+      'RJW-P3EDMJ',
+      'RJW-7ZGW7Y',
+      'RJW-D6QM9X',
+      'RJW-GVSMHQ',
+      'RJW-NYBJWB',
+      'RJW-EYXQTV',
+      'RJW-SRX8T7',
+      'RJW-7N47M8',
+      'RJW-NGM7VP',
+      'RJW-QVXQZU',
+      'RJW-BK3QCJ',
+      'RJW-WVSCEM',
+      'RJW-TTK632',
+      'RJW-3UPZBU',
+      'RJW-XGJ7AC',
+      'RJW-BZ722D',
+      'RJW-NH6B9W',
+      'RJW-AGQR2D',
+      'RJW-DXQ8UR',
+      'RJW-BUN4QD',
+      'RJW-Z4FPAN',
+      'RJW-PHXSBG',
+      'RJW-7HVFSH',
+      'RJW-TH88W3',
+      'RJW-4A2N9C',
+      'RJW-HXTMNE',
+      'RJW-HZQHXY',
+      'RJW-RDE4JW',
+      'RJW-EN8ZSG',
+      'RJW-YTAA6A',
+      'RJW-GNBMTK',
+      'RJW-J5ZPK4',
+      'RJW-KVCJ9X',
+      'RJW-S34RPT',
+      'RJW-VUY7R8',
+      'RJW-CB3AG2',
+      'RJW-8JDH95',
+      'RJW-W6B6KN',
+      'RJW-R8Q5V7',
+      'RJW-G39HH7',
+      'RJW-2J7ZQH'
   ];
   const REDEEM_CODE_MAP = new Map(
     REDEEM_CODES.map(code => [code.replace(/[^0-9A-Z]/g, ''), code])
   );
-  const USED_CODE_KEY = 'RJ_WISH_USED_CODES_V1';
+  const USED_CODE_KEY = 'RJ_WISH_USED_CODES_V2';
 
   function normalizeCode(raw) {
     return String(raw || '').toUpperCase().replace(/[^0-9A-Z]/g, '');
@@ -1095,7 +1095,7 @@
     } catch (e) {}
   }
 
-  const PENDING_CODE_KEY = 'RJ_WISH_PENDING_CODES_V1';
+  const PENDING_CODE_KEY = 'RJ_WISH_PENDING_CODES_V2';
 
   function loadPendingCodes() {
     try {
